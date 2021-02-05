@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "nil.image.save-path",
+      "type": "java.lang.String",
+      "description": "Description for nil.image.save-path."
+    },
+    {
+      "name": "nil.image.max-size",
+      "type": "java.lang.String",
+      "description": "Description for nil.image.max-size."
+    }
+  ]
+}

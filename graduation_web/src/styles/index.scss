@@ -1,0 +1,179 @@
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+// @import './bootstrap.min.css';
+@import url('https://at.alicdn.com/t/font_2245208_ki6u34h6eeq.css');
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  font-size: 14px;
+  font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, "Microsoft JhengHei", "MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  background-color: skyblue;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ededed;
+  border-radius: 3px;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media (min-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+$main_my_color: #767ae8;
+//
+.pubBtn {
+  width: 100%;
+  display: block;
+  background: $main_my_color;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+// 等级
+.m-level {
+  display: inline-block;
+  width: 28px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-image: url(//s1.hdslb.com/bfs/static/jinkela/space/asserts/level.png);
+  background-repeat: no-repeat;
+  background-position: 999px 999px
+}
+
+.m-level[lvl="0"] {
+  background-position: -21px -10px
+}
+
+.m-level[lvl="1"] {
+  background-position: -21px -46px
+}
+
+.m-level[lvl="2"] {
+  background-position: -21px -82px
+}
+
+.m-level[lvl="3"] {
+  background-position: -21px -118px
+}
+
+.m-level[lvl="4"] {
+  background-position: -21px -154px;
+}
+
+.m-level[lvl="5"] {
+  background-position: -21px -190px
+}
+
+.m-level[lvl="6"] {
+  background-position: -21px -226px
+}
+
+pre.ql-syntax {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
