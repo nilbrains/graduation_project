@@ -67,3 +67,8 @@ npm run dev
 ![img](./imgs/nil_2021-02-05_14-28-43.png)
 ![img](./imgs/nil_2021-02-05_14-28-54.png)
 ![img](./imgs/nil_2021-02-05_14-30-16.png)
+
+## 赞助
+
+[Faded]-￥28.88
+
